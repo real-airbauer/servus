@@ -17,7 +17,7 @@
         <div id="open-mobile-menu" class="home-hamburger get-started">
           <img
             alt="image"
-            src="9df4c1d2-c994-4c1e-a57e-b5a81d63ee6c"
+            src="/playground_assets/hamburger-200h.png"
             class="home-image"
           />
         </div>
@@ -161,39 +161,44 @@
       </header>
     </section>
     <section class="home-section6">
-      <a
-        href="https://github.com/real-airbauer"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="home-github button"
-      >
-        GitHub
-      </a>
-      <button type="button" class="home-discord button">Discord</button>
-      <a
-        href="https://twitter.com/real_airbauer"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="home-twitter button"
-      >
-        Twitter
-      </a>
-      <a
-        href="https://dev.to/airbauer"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="home-devto button"
-      >
-        Dev.to
-      </a>
-      <a
-        href="https://gitlab.com/real-airbauer"
-        target="_blank"
-        rel="noreferrer noopener"
-        class="home-gitlab button"
-      >
-        GitLab
-      </a>
+      <div class="home-container2">
+        <a
+          href="https://twitter.com/real_airbauer"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="home-twitter button"
+        >
+          Twitter
+        </a>
+        <div class="home-container3">
+          <a
+            href="https://gitlab.com/real-airbauer"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="home-gitlab button"
+          >
+            GitLab
+          </a>
+          <div class="home-container4">
+            <a
+              href="https://discord.com/channels/549207539544227846"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-discord button"
+            >
+              Discord
+            </a>
+            <a
+              href="https://github.com/real-airbauer"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-github button"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="home-footer">
       <div class="home-content1">
@@ -325,6 +330,7 @@ export default {
 }
 .home-navbar {
   width: 100%;
+  height: 56px;
   display: flex;
   z-index: 1000;
   position: relative;
@@ -435,7 +441,7 @@ export default {
 }
 .home-section {
   width: 100%;
-  height: 80vh;
+  height: 321px;
   display: flex;
   align-items: center;
   border-color: #51515A;
@@ -555,8 +561,8 @@ export default {
 }
 .home-section2 {
   gap: var(--dl-space-space-fiveunits);
-  flex: 1;
   width: 100%;
+  height: 582px;
   display: flex;
   align-items: center;
   padding-top: 120px;
@@ -607,8 +613,8 @@ export default {
 }
 .home-section4 {
   gap: var(--dl-space-space-fiveunits);
-  flex: 1;
   width: 100%;
+  height: 48px;
   display: flex;
   position: relative;
   align-items: center;
@@ -635,69 +641,71 @@ export default {
 }
 .home-section6 {
   gap: var(--dl-space-space-fiveunits);
-  flex: 1;
   width: 100%;
+  height: 160px;
   display: flex;
+  padding: 120px;
+  z-index: 100;
   position: relative;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
   align-items: center;
-  padding-top: 120px;
   border-color: #51515A;
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: column;
-  padding-bottom: 120px;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: row;
   justify-content: center;
   border-top-width: 1px;
 }
-.home-github {
-  top: 70px;
-  left: 700px;
-  color: #80ff44;
-  position: absolute;
-  text-align: center;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  text-decoration: none;
-  background-color: var(--dl-color-gray-black);
-}
-.home-discord {
-  top: 70px;
-  left: 300px;
-  color: #80ff44;
-  position: absolute;
-  text-align: center;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  background-color: var(--dl-color-gray-black);
+.home-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .home-twitter {
-  top: 70px;
-  left: 500px;
   color: #80ff44;
-  position: absolute;
   text-align: center;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
   text-decoration: none;
   background-color: var(--dl-color-gray-black);
 }
-.home-devto {
-  top: 70px;
-  color: rgb(128, 255, 68);
-  right: 176px;
-  position: absolute;
-  align-self: flex-end;
-  text-align: center;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  text-decoration: none;
-  background-color: var(--dl-color-gray-black);
+.home-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .home-gitlab {
-  top: 70px;
-  left: 100px;
   color: rgb(128, 255, 68);
-  position: absolute;
+  align-self: center;
+  text-align: center;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-black);
+}
+.home-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-discord {
+  color: #80ff44;
+  text-align: center;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-black);
+}
+.home-github {
+  color: #80ff44;
   text-align: center;
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
@@ -706,15 +714,12 @@ export default {
 }
 .home-footer {
   gap: var(--dl-space-space-fiveunits);
-  flex: 1;
   width: 100%;
+  height: 104px;
   display: flex;
+  padding: 120px;
   align-items: center;
-  padding-top: 120px;
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  padding-right: var(--dl-space-space-oneandhalfunits);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-threeunits);
   justify-content: center;
 }
 .home-content1 {
