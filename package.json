@@ -1,21 +1,32 @@
 {
   "name": "airbauer",
   "version": "1.0.0",
-  "description": "A nuxt project generated based on a UIDL document",
-  "author": "teleporthq.io",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "devDependencies": {
-    "nuxt": "^2.15.8"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "2.7.14",
+    "vue": "^2.6.7",
+    "vue-router": "^3.0.2",
+    "vue-meta": "^2.2.1",
     "@lottiefiles/vue-lottie-player": "1.0.4",
     "dangerous-html": "0.1.11"
-  }
+  },
+  "devDependencies": {
+    "@vue/babel-preset-app": "^5.0.8",
+    "@vue/cli-plugin-babel": "^5.0.4",
+    "@vue/cli-service": "^5.0.8",
+    "vue-template-compiler": "^2.6.7"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

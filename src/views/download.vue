@@ -5,7 +5,7 @@
 <script>
 export default {
   name: 'Download',
-  head: {
+  metaInfo: {
     title: 'download - airbauer',
     meta: [
       {

@@ -1,4 +1,4 @@
 
 <template>
-  <div><nuxt /></div>
+  <router-view/>
 </template>

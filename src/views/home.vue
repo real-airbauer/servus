@@ -113,10 +113,10 @@
         </div>
         <lottie-vue-player
           :src="`https://assets6.lottiefiles.com/packages/lf20_ex5DR6Osfr.json`"
-          :autoplay="true"
-          :speed="1"
-          :backgroundColor="transparent"
           :loop="true"
+          :speed="1"
+          :autoplay="true"
+          :backgroundColor="transparent"
           class="home-lottie-node"
         ></lottie-vue-player>
         <div class="home-image2"></div>
@@ -286,7 +286,7 @@
 </template>
 
 <script>
-import DangerousHTML from 'dangerous-html/dist/vue/lib.mjs'
+import DangerousHTML from 'dangerous-html/vue'
 
 import AppCard1 from '../components/card1'
 import AppCard4 from '../components/card4'
@@ -300,7 +300,7 @@ export default {
     AppCard4,
     AppCard3,
   },
-  head: {
+  metaInfo: {
     title: 'airbauer',
     meta: [
       {
